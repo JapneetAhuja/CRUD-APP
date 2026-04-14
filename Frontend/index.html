@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <title>Student CRUD System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">Student CRUD Application</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="row">
+
+<div>
+ID
+<input id="id">
+</div>
+
+<div>
+Course
+<input id="course">
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div>
+First Name
+<input id="fname">
+</div>
+
+<div>
+Last Name
+<input id="lname">
+</div>
+
+</div>
+
+Email
+<input id="email">
+
+City
+<input id="city">
+
+Comments
+<textarea id="comments"></textarea>
+
+<button class="add" onclick="addStudent()">Add</button>
+<button class="update" onclick="updateStudent()">Update</button>
+<button class="clear" onclick="clearForm()">Clear</button>
+
+</div>
+
+
+<div class="card">
+
+<table id="table">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Course</th>
+<th>City</th>
+<th>Action</th>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="student.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
